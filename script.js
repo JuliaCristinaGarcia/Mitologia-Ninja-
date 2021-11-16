@@ -1,28 +1,14 @@
-   // search-box open close js code
-let menu = document.querySelector(".menu"); 
- // menu responsivo para celular, abrir e fechar
-  let opcoes = document.querySelector(".opcoes");
-  let menuOpenBtn = document.querySelector(".menu i.fa-bars");
-  let menuCloseBtn = document.querySelector(".opcoes i.bx-x");
-  menuOpenBtn.onclick = function() {
-  opcoes.style.left = "0";
-  }
-  menuCloseBtn.onclick = function() {
-    opcoes.style.left = "-100%";
-  }
-  
-  
-  // submenu responsivo para celular, abrir e fechar
-  let  tiposArrow = document.querySelector(".tipos-arrow");
-  tiposArrow.onclick = function() {
-    opcoes.classList.toggle("show1");
-  }
-  let produtoArrow = document.querySelector(".produto-arrow");
-  produtoArrow.onclick = function() {
-    opcoes.classList.toggle("show2");
-  }
-  let idiomaArrow = document.querySelector(".idioma-arrow");
-  idiomaArrow.onclick = function() {
-    opcoes.classList.toggle("show3");
-  }
+let arrow = document.querySelectorAll(".arrow");
+for (var i = 0; i < arrow.length; i++) {
+  arrow[i].addEventListener("click", (e)=>{
+ let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+ arrowParent.classList.toggle("showMenu");
+  });
+}
 
+let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".bx-menu");
+console.log(sidebarBtn);
+sidebarBtn.addEventListener("click", ()=>{
+  sidebar.classList.toggle("close");
+});
