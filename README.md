@@ -1,2 +1,2 @@
 # Mitologia-Ninja-
-Estudo de algumas mitologias - Projeto escolar 
+:bulb Estudo de algumas mitologias - Projeto escolar 
