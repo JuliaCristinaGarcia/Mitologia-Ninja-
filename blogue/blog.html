@@ -44,7 +44,7 @@
   
   
                       <li>
-                          <a class="opn" href="#"> Home</a>
+                          <a class="opn" href="../PRINCIPAL/index.html"> Home</a>
                       </li>
   
   
@@ -53,15 +53,13 @@
                           <a class="opnx" href="#" > Sobre Mitologias</a>  
                           <i class='bx bxs-chevron-down tipos-arrow arrow  '></i>
                           <ul class="tipos-submenu submenu">
-                              <li><a href="\o que é mitologia\oque.html">O que é Mitologia?</a></li>
-                              <li><a href="\tipos de mitologia\grega\grega.html">Mitologia Grega</a></li>
-                              <li><a href="\tipos de mitologia\romana\romana.html">Mitologia Romana</a></li>
-                              <li><a href="\tipos de mitologia\egipsia\egipsia.html">Mitologia Egípsia</a></li>
-                              <li><a href="\tipos de mitologia\nórtica\nortica.html">Mitologia Nórtica</a></li>
-                              <li><a href="\tipos de mitologia\celta\celta.html">Mitologia Celta</a></li>
-                              <li><a href="\tipos de mitologia\japonesa\japonesa.html">Mitologia Japonesa</a></li>
-                              <li><a href="\tipos de mitologia\africa\africa.html">Mitologia Africana</a></li>
-                              <li><a href="\tipos de mitologia\brasileira\brasileira.html">Mitologia Brasileira</a></li>
+                              <li><a href="../o que é mitologia/oque.html">O que é Mitologia?</a></li>
+                              <li><a href="../tipos de mitologia/grega/grega.html">Mitologia Grega</a></li>
+                              <li><a href="../tipos de mitologia/romana/romana.html">Mitologia Romana</a></li>
+                              <li><a href="../tipos de mitologia/egipsia/egipsia.html">Mitologia Egípsia</a></li>
+                              <li><a href="../tipos de mitologia/nórtica/nortica.html">Mitologia Nórtica</a></li>
+                              <li><a href="../tipos de mitologia/celta/celta.html">Mitologia Celta</a></li>
+                              <li><a href="../tipos de mitologia/brasileira/brasileira.html">Mitologia Brasileira</a></li>
                           </ul>
                       </li>                                      
   
@@ -69,7 +67,7 @@
   
                     
                       <li>
-                          <a class="opn" href="\blogue\blog.html"  style="  color: #e2c89c; "> Blog</a>
+                          <a class="opn" href="../blogue/blog.html"  style="  color: #e2c89c; "> Blog</a>
                       </li>
   
   
@@ -79,10 +77,10 @@
                           <a class="opn" href="#" style="cursor: default"> Produtos </a>
                               <i class='bx bxs-chevron-down produto-arrow arrow  '></i>
                           <ul class="produtos-submenu submenu">
-                              <li><a href="\produtos\moda\moda.html">Moda</a></li>
-                              <li><a href="\produtos\decorações\decoracao.html">Decoração</a></li>
-                              <li><a href="\produtos\livros\livros.html">Livros</a></li>
-                              <li><a href="\produtos\filmes\filmes.html">Filmes</a></li>
+                              <li><a href="../produtos/moda/moda.html">Moda</a></li>
+                              <li><a href="../produtos/decorações/decoracao.html">Decoração</a></li>
+                              <li><a href="../produtos/livros/livros.html">Livros</a></li>
+                              <li><a href="../produtos/filmes/filmes.html">Filmes</a></li>
                           </ul>
                       </li>
   
@@ -90,7 +88,7 @@
   
   
                       <li>
-                          <a class="opn" href="\sobre nós\nos.html"> Sobre Nós</a>
+                          <a class="opn" href="../sobre nós/nos.html"> Sobre Nós</a>
                       </li>
   
 
@@ -98,7 +96,7 @@
   
                       
                       <li>
-                          <a class="opn" href="\login\login.html" style="margin-right: 0.366vw; "> Login</a>
+                          <a class="opn" href="../login/login.html" style="margin-right: 0.366vw; "> Login</a>
                       </li>
                       
                       <div class="line"></div>
@@ -178,11 +176,10 @@
 
         <li>
           <div class="question-arrow">
-            <span class="question">Por que a mitologia grega foi importante para o pensamento?</span>
+            <span class="question">Por que Odisseu navega mais perto de Cila do que de Caribde?</span>
             <i class="bx bxs-chevron-down arrow"></i>
           </div>
-          <p>A mitologia grega surgiu da curiosidade que os gregos tinham de explicar a origem da vida e os problemas da existência. Assim, criaram deuses imortais à semelhança do ser humano. ... Considerado o mais importante dentre os deuses, ele representava a justiça, a razão e a autoridade.
-          </p>
+          <p>Na mitologia grega, Caríbdis e Cila eram monstros marinhos que representavam grandes perigos enfrentados pelos navegadores que ousavam desbravar o horizonte. Entretanto, Odisseu não podia evitar o redemoinho navegando pelo lado oposto, pois lá se encontrava Cila, monstro ameaçador de doze pernas e seis cabeças.</p>
           <span class="line"></span>
         </li>
 
@@ -228,6 +225,25 @@
     </div>
   </div>
   
+
+
+
+
+  <script>
+        let li = document.querySelectorAll(".faq-text li");
+    for (var i = 0; i < li.length; i++) {
+      li[i].addEventListener("click", (e)=>{
+        let clickedLi;
+        if(e.target.classList.contains("question-arrow")){
+          clickedLi = e.target.parentElement;
+        }else{
+          clickedLi = e.target.parentElement.parentElement;
+        }
+       clickedLi.classList.toggle("showAnswer");
+      });
+    }
+  </script>
+
 
   <div class="blogg">
 
@@ -297,8 +313,8 @@
           <div class="Boxiii">
               <img class="imgBoxiii" src="preto.jpg" alt="Seguidora da página">
           </div>
-          <p>A empresa toda merece o mérito, todos educados e atenciosos. Certamente irei recomenda-los. Muito bom!</p>
-          <h4>Gus Porter<br><span>Fã</span>
+          <p>Muito bom o site! Estou impresionado com o tanto de conteúdo, meus parabens!</p>
+          <h4>Estevão Henriquer<br><span>Fã</span>
           </h4>
       </div>
 
@@ -308,7 +324,7 @@
             <img class="imgBoxiii" src="amarelo.jpg" alt="Seguidora da página">
         </div>
         <p>A empresa toda merece o mérito, todos educados e atenciosos. Certamente irei recomenda-los. Muito bom!</p>
-        <h4>Gus Porter<br><span>Fã</span>
+        <h4>Clark Garcia<br><span>Super Fã</span>
         </h4>
     </div>
 
@@ -317,8 +333,8 @@
       <div class="Boxiii">
           <img class="imgBoxiii" src="oculos.jpg" alt="Seguidora da página">
       </div>
-      <p>A empresa toda merece o mérito, todos educados e atenciosos. Certamente irei recomenda-los. Muito bom!</p>
-      <h4>Gus Porter<br><span>Fã</span>
+      <p>Acompanho esse site a um tempo e gosto bastante!</p>
+      <h4>José Santos<br><span>Fã</span>
       </h4>
     </div>
 
@@ -326,8 +342,8 @@
       <div class="Boxiii">
           <img class="imgBoxiii" src="azul.jpg" alt="Seguidora da página">
       </div>
-      <p>A empresa toda merece o mérito, todos educados e atenciosos. Certamente irei recomenda-los. Muito bom!</p>
-      <h4>Gus Porter<br><span>Fã</span>
+      <p>Muito bom! Parabens</p>
+      <h4>Paulo<br><span>Fã</span>
       </h4>
   </div>
 
@@ -335,8 +351,8 @@
     <div class="Boxiii">
         <img class="imgBoxiii" src="berg.jpg" alt="Seguidora da página">
     </div>
-    <p>A empresa toda merece o mérito, todos educados e atenciosos. Certamente irei recomenda-los. Muito bom!</p>
-    <h4>Gus Porter<br><span>Fã</span>
+    <p>Aprendi muito aqui, vou levar para a vida, muito obrigada</p>
+    <h4>Benedict Cumberbatch<br><span>Fã</span>
     </h4>
   </div>
 
@@ -345,8 +361,8 @@
     <div class="Boxiii">
         <img class="imgBoxiii" src="moçça.jpg" alt="Seguidora da página">
     </div>
-    <p>A empresa toda merece o mérito, todos educados e atenciosos. Certamente irei recomenda-los. Muito bom!</p>
-    <h4>Gus Porter<br><span>Fã</span>
+    <p>site simplesmente incrivel, estética perfeita e design também, sem falar no conteúdo e no tanto de coisa legal e interante que tem. Parabens e obrigada</p>
+    <h4>Miguel da Silva<br><span>Super Fã</span>
     </h4>
   </div>
 
@@ -356,26 +372,130 @@
 </div>
 
 
-
-  <script>
-        let li = document.querySelectorAll(".faq-text li");
-    for (var i = 0; i < li.length; i++) {
-      li[i].addEventListener("click", (e)=>{
-        let clickedLi;
-        if(e.target.classList.contains("question-arrow")){
-          clickedLi = e.target.parentElement;
-        }else{
-          clickedLi = e.target.parentElement.parentElement;
-        }
-       clickedLi.classList.toggle("showAnswer");
-      });
-    }
-  </script>
+  <div class="conhe">
+    <h2>Faça novas amizades que gostam das mesmas coisas que você</h2>
+  </div>
 
 
 
-
-
+<div class="amigos">
+  <div class="container">
+    <input type="radio" name="dot" id="one">
+    <input type="radio" name="dot" id="two">
+    <div class="main-card">
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="img1.jpg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">Andrew Neil</div>
+             <div class="job">Web Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="img2.jpg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">Jasmine Carter</div>
+             <div class="job">UI Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="img3.jpg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">Justin Chung</div>
+             <div class="job">Web Devloper</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="img4.jpg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">Appolo Reef</div>
+             <div class="job">Web Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="img5.jpg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">Adrina Calvo</div>
+             <div class="job">UI Designer</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="content">
+           <div class="img">
+             <img src="img6.jpeg" alt="">
+           </div>
+           <div class="details">
+             <div class="name">Nicole Lewis</div>
+             <div class="job">Web Devloper</div>
+           </div>
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <label for="one" class=" active one"></label>
+      <label for="two" class="two"></label>
+    </div>
+  </div>
+</div>
 
     
   <div class="rodape">
@@ -395,12 +515,12 @@
       </ul>
 
       <ul class="rodape_menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Mitologias</a></li>
+        <li><a href="../PRINCIPAL/index.html">Home</a></li>
+        <li><a href="../o que é mitologia/oque.html">Mitologias</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="#">Produtos</a></li>
-        <li><a href="#">Sobre Nós</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="../produtos/produtos.html">Produtos</a></li>
+        <li><a href="../sobre nós/nos.html">Sobre Nós</a></li>
+        <li><a href="../login/login.html">Login</a></li>
       </ul>
 
       <p>©2021 Julia Garcia</p>
