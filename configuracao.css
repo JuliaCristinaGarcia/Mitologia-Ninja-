@@ -2104,9 +2104,10 @@ div.image img {
   }
 
       
-  body{
-    overflow-x: hidden;
-  }
+body {
+    overflow-x: clip;
+    width: 100%;
+}
 
 
 }
