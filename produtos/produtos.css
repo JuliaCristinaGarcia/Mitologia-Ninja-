@@ -62,7 +62,6 @@ div.img{
 
 div.img img{
     width: 100%;
-    opacity: 0.5;
 }
 
 div.img img:hover{
@@ -120,16 +119,18 @@ ul.nav-list li a:hover{
     flex-direction: row;
     flex-wrap: wrap;
 }
-  @media (max-width: 700px) {
-    .wrapper{
-      margin: 200px auto;
-    }
-  }
+
+
+
+
+
+
+
+
   .wrapper .box{
     width: 350px;
     margin: 0 auto;
     position: relative;
-    perspective: 1000px;
   }
   .wrapper .box .front-face {
     background: rgb(255, 255, 255);
@@ -347,13 +348,17 @@ ul.nav-list li a:hover{
 /* TABLET */
 
 @media only screen and (max-width: 900px) {
-.text {
-    margin: 20vw 30vw 5vw -7vw;
+  .text {
+    margin: 20vw 30vw 5vw 3vw;
 }
 }
 
 
-
+@media only screen and (max-width: 700px) {
+    .wrapper{
+      margin: 200px auto;
+    }
+  }
 
 
 
@@ -386,18 +391,24 @@ ul.nav-list {
 }
 
 nav.cabecalho {
-    display: flex;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    height: 8vh;
-    margin: 0vw 0vw 1vw -11vw;
-    position: absolute;
-    width: 100%;
-    background: #F7F4F2;
-    justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  height: 8vh;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  background: #F7F4F2;
+  justify-content: flex-start;
 }
-.text {
-    margin: 20vw 30vw 5vw -7vw;
+
+header{
+  position: relative;
+  background: linear-gradient(120deg, #fff, #fff 62%, #e9c85c 62%, #e9c85c 100%);
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+
 }
 
 div.logo {
@@ -532,7 +543,20 @@ div.logo {
 
 
 
-
-
 }
 
+@media only screen and (max-width: 630px){
+  div.img img {
+    width: 100%;
+    display: none;
+}
+
+
+header {
+  position: relative;
+  background: linear-gradient(120deg, #fff, #fff 70%, #e9c85c 62%, #e9c85c 100%);
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+}
+}
