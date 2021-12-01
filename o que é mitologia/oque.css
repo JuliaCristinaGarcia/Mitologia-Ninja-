@@ -1091,9 +1091,6 @@ div.menu i.fa-bars, div.logo-menucel .bx-x {
 /* device- */
 
 @media only screen and (max-width:370px){
-    div.opcoes{
-        max-width: 100%;
-    }
 
     div.login, div.atalho, div.contatu{
       flex: 1;
